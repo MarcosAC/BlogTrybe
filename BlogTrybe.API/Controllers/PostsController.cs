@@ -21,7 +21,7 @@ namespace BlogTrybe.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get(string query)
+        public async Task<IActionResult> Search(string query)
         {
             return Ok();
         }

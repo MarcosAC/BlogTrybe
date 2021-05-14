@@ -9,6 +9,7 @@ namespace BlogTrybe.Core.Repositories
         Task<List<Post>> GetAllAsync();
         Task<Post> GetByIdAsync(int id);
         Task AddAsync(Post post);
+        Task Update(Post post);
         Task SaveChangesAsync();
     }
 }
