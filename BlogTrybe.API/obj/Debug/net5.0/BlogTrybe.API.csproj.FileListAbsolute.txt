@@ -8,9 +8,11 @@ C:\Projetos\BlogTrybe\BlogTrybe.API\bin\Debug\net5.0\BlogTrybe.API.dll
 C:\Projetos\BlogTrybe\BlogTrybe.API\bin\Debug\net5.0\ref\BlogTrybe.API.dll
 C:\Projetos\BlogTrybe\BlogTrybe.API\bin\Debug\net5.0\BlogTrybe.API.pdb
 C:\Projetos\BlogTrybe\BlogTrybe.API\bin\Debug\net5.0\Dapper.dll
+C:\Projetos\BlogTrybe\BlogTrybe.API\bin\Debug\net5.0\Humanizer.dll
 C:\Projetos\BlogTrybe\BlogTrybe.API\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
 C:\Projetos\BlogTrybe\BlogTrybe.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
 C:\Projetos\BlogTrybe\BlogTrybe.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Projetos\BlogTrybe\BlogTrybe.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Projetos\BlogTrybe\BlogTrybe.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Projetos\BlogTrybe\BlogTrybe.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Projetos\BlogTrybe\BlogTrybe.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll

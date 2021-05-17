@@ -2,6 +2,7 @@ C:\Projetos\BlogTrybe\BlogTrybe.Application\bin\Debug\net5.0\BlogTrybe.Applicati
 C:\Projetos\BlogTrybe\BlogTrybe.Application\bin\Debug\net5.0\BlogTrybe.Application.dll
 C:\Projetos\BlogTrybe\BlogTrybe.Application\bin\Debug\net5.0\ref\BlogTrybe.Application.dll
 C:\Projetos\BlogTrybe\BlogTrybe.Application\bin\Debug\net5.0\BlogTrybe.Application.pdb
+C:\Projetos\BlogTrybe\BlogTrybe.Application\obj\Debug\net5.0\BlogTrybe.Application.csprojAssemblyReference.cache
 C:\Projetos\BlogTrybe\BlogTrybe.Application\obj\Debug\net5.0\BlogTrybe.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Projetos\BlogTrybe\BlogTrybe.Application\obj\Debug\net5.0\BlogTrybe.Application.AssemblyInfoInputs.cache
 C:\Projetos\BlogTrybe\BlogTrybe.Application\obj\Debug\net5.0\BlogTrybe.Application.AssemblyInfo.cs
