@@ -1,6 +1,8 @@
+using BlogTrybe.Application.Commands.CreatUser;
 using BlogTrybe.Core.Repositories;
 using BlogTrybe.Infrastructure.Persistence;
 using BlogTrybe.Infrastructure.Persistence.Repositories;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -36,6 +38,8 @@ namespace BlogTrybe.API
 
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IPostRepository, PostRepository>();
+
+            services.AddMediatR(typeof(CreatUserCommand));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
