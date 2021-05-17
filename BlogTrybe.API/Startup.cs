@@ -39,7 +39,7 @@ namespace BlogTrybe.API
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IPostRepository, PostRepository>();
 
-            services.AddMediatR(typeof(CreatUserCommand));
+            services.AddMediatR(typeof(CreateUserCommand));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

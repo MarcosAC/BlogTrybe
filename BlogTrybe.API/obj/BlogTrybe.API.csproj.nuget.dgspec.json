@@ -122,7 +122,14 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Projetos\\BlogTrybe\\BlogTrybe.Core\\BlogTrybe.Core.csproj": {
+                "projectPath": "C:\\Projetos\\BlogTrybe\\BlogTrybe.Core\\BlogTrybe.Core.csproj"
+              },
+              "C:\\Projetos\\BlogTrybe\\BlogTrybe.Infrastructure\\BlogTrybe.Infrastructure.csproj": {
+                "projectPath": "C:\\Projetos\\BlogTrybe\\BlogTrybe.Infrastructure\\BlogTrybe.Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

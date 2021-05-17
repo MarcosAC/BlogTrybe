@@ -4,11 +4,12 @@ namespace BlogTrybe.Core.Entities
 {
     public class User : BaseEntity
     {
-        public User(string displayName, string email, string password)
+        public User(string displayName, string email, string password, string image)
         {
             DisplayName = displayName;
             Email = email;
             Password = password;
+            Image = image;
             UserPosts = new List<Post>();
         }
 

@@ -1617,6 +1617,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "BlogTrybe.Core": "1.0.0",
+          "BlogTrybe.Infrastructure": "1.0.0",
           "Dapper": "2.0.90",
           "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0"
         },

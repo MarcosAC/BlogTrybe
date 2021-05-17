@@ -2,7 +2,7 @@
 
 namespace BlogTrybe.Application.Commands.CreatUser
 {
-    public class CreatUserCommand : IRequest<int>
+    public class CreateUserCommand : IRequest<int>
     {
         public string DisplayName { get; private set; }
         public string Email { get; private set; }

@@ -5,7 +5,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Commands\CreateUser\BlogTrybeDbContext.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.90" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Validators\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlogTrybe.Core\BlogTrybe.Core.csproj" />
+    <ProjectReference Include="..\BlogTrybe.Infrastructure\BlogTrybe.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

@@ -9,6 +9,8 @@ C:\Projetos\BlogTrybe\BlogTrybe.API\bin\Debug\net5.0\ref\BlogTrybe.API.dll
 C:\Projetos\BlogTrybe\BlogTrybe.API\bin\Debug\net5.0\BlogTrybe.API.pdb
 C:\Projetos\BlogTrybe\BlogTrybe.API\bin\Debug\net5.0\Dapper.dll
 C:\Projetos\BlogTrybe\BlogTrybe.API\bin\Debug\net5.0\Humanizer.dll
+C:\Projetos\BlogTrybe\BlogTrybe.API\bin\Debug\net5.0\MediatR.dll
+C:\Projetos\BlogTrybe\BlogTrybe.API\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Projetos\BlogTrybe\BlogTrybe.API\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
 C:\Projetos\BlogTrybe\BlogTrybe.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
 C:\Projetos\BlogTrybe\BlogTrybe.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
