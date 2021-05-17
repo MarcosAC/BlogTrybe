@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "uQGpSAydATv1ULNmxexfd66DuI6JJlZ+g5o5TT9p76LftQ7t+hDyFWzqsL5S3rJ7aInyIEgZjJOxTmeAmlgzqQ==",
+  "dgSpecHash": "dkFJ1coiGrLYeatmw3oXPZe73JTKYUPOv1cQVcRuHwQ1TkcxeHy0A3jH+lzCVuYka4/8yV1EHCdd07Gtk/wb4w==",
   "success": true,
   "projectFilePath": "C:\\Projetos\\BlogTrybe\\BlogTrybe.Application\\BlogTrybe.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Marcos Aurelio\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
+    "C:\\Users\\Marcos Aurelio\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\Marcos Aurelio\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
+    "C:\\Users\\Marcos Aurelio\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1389,6 +1389,9 @@
         }
       },
       "BlogTrybe.Application/1.0.0": {
+        "dependencies": {
+          "Dapper": "2.0.90"
+        },
         "runtime": {
           "BlogTrybe.Application.dll": {}
         },

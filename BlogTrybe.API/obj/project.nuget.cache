@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "05X0/5neHCDrtbZnKSYQOOpjpzX1PuYDwN2FqOuN0lcUTlE3S9NwN6n772OtJ0VXcs/1LRRByJSU/3Ch/R78Lw==",
+  "dgSpecHash": "IiVonvDqbBwUhGqvkNbgoF2IdB+TQLYRCvpAxY6pHw9z3wmKQpzTEGh2fy32jpSkhlzHE05TLHhSK+22ZYaJng==",
   "success": true,
   "projectFilePath": "C:\\Projetos\\BlogTrybe\\BlogTrybe.API\\BlogTrybe.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marcos Aurelio\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\Marcos Aurelio\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Marcos Aurelio\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\Marcos Aurelio\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\Marcos Aurelio\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Marcos Aurelio\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\Marcos Aurelio\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
