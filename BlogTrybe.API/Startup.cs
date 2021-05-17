@@ -1,4 +1,6 @@
+using BlogTrybe.Core.Repositories;
 using BlogTrybe.Infrastructure.Persistence;
+using BlogTrybe.Infrastructure.Persistence.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,6 +33,9 @@ namespace BlogTrybe.API
             var connectionString = Configuration.GetConnectionString("BlogTrybeCs");
 
             services.AddDbContext<BlogTrybeDbContext>(options => options.UseSqlServer(connectionString));
+
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IPostRepository, PostRepository>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
