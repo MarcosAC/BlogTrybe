@@ -1,7 +1,6 @@
 ﻿using BlogTrybe.Application.ViewModels;
-using BlogTrybe.Infrastructure.Persistence;
+using BlogTrybe.Core.Repositories;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -9,15 +8,15 @@ namespace BlogTrybe.Application.Queries.GetUser
 {
     public class GetUserQueryHandler : IRequestHandler<GetUserQuery, UserViewModel>
     {
-        private readonly BlogTrybeDbContext _dbContext;
+        private readonly IUserRepository _userRepository;
 
-        public GetUserQueryHandler(BlogTrybeDbContext dbContext)
+        public GetUserQueryHandler(IUserRepository userRepository)
         {
-            _dbContext = dbContext;
+            _userRepository = userRepository;
         }
         public async Task<UserViewModel> Handle(GetUserQuery request, CancellationToken cancellationToken)
         {
-            var user = await _dbContext.Users.SingleOrDefaultAsync(user => user.Id == request.Id);
+            var user = await _userRepository.GetByIdAsync(request.Id);
 
             if (user == null)
                 return null;
