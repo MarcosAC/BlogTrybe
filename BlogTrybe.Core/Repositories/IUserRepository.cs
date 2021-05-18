@@ -9,6 +9,7 @@ namespace BlogTrybe.Core.Repositories
         Task<List<User>> GetAllAsync();
         Task<User> GetByIdAsync(int id);   
         Task AddAsync(User user);
+        Task DeleteAsync(int id);
         Task SaveChangesAsync();
         Task<User> GetUserByEmailAndPasswordAsync(string email, string passwordHash);
     }
