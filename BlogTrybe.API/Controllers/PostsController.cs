@@ -27,7 +27,7 @@ namespace BlogTrybe.API.Controllers
             return CreatedAtAction(nameof(GetById), new { id = id}, command);
         }
 
-        [HttpGet]
+        [HttpGet("{search}")]
         public async Task<IActionResult> Search(string query)
         {
             return Ok();
