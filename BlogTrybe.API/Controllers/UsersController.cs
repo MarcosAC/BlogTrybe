@@ -1,11 +1,9 @@
 ﻿using BlogTrybe.Application.Commands.CreatUser;
+using BlogTrybe.Application.Commands.DeleteUser;
 using BlogTrybe.Application.Queries.GetAllUsers;
 using BlogTrybe.Application.Queries.GetUserById;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace BlogTrybe.API.Controllers
@@ -60,6 +58,10 @@ namespace BlogTrybe.API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
+            var command = new DeleteUserCommand(id);
+
+            await _mediator.Send(command);
+
             return NoContent();
         }
     }
