@@ -44,11 +44,19 @@ namespace BlogTrybe.Infrastructure.Persistence.Repositories
             //}
             throw new System.NotImplementedException();
         }
+
+        public async Task DeleteAsync(int id)
+        {
+            var post = await GetByIdAsync(id);
+
+            _dbContext.Posts.Remove(post);
+
+            await SaveChangesAsync();
+        }
+
         public async Task SaveChangesAsync()
         {
             await _dbContext.SaveChangesAsync();
-        }
-
-        
+        }        
     }
 }

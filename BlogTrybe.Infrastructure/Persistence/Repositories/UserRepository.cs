@@ -20,6 +20,15 @@ namespace BlogTrybe.Infrastructure.Persistence.Repositories
             await SaveChangesAsync();
         }
 
+        public async Task DeleteAsync(int id)
+        {
+            var user = await GetByIdAsync(id);
+
+            _dbContext.Users.Remove(user);
+
+            await SaveChangesAsync();
+        }
+
         public async Task<List<User>> GetAllAsync()
         {
             return await _dbContext.Users.ToListAsync();
