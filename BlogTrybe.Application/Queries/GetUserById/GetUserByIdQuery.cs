@@ -1,11 +1,11 @@
 ﻿using BlogTrybe.Application.ViewModels;
 using MediatR;
 
-namespace BlogTrybe.Application.Queries.GetUser
+namespace BlogTrybe.Application.Queries.GetUserById
 {
-    public class GetUserQuery : IRequest<UserViewModel>
+    public class GetUserByIdQuery : IRequest<UserViewModel>
     {
-        public GetUserQuery(int id)
+        public GetUserByIdQuery(int id)
         {
             Id = id;
         }
