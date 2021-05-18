@@ -1,6 +1,7 @@
 ﻿using BlogTrybe.Core.Entities;
 using BlogTrybe.Core.Repositories;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace BlogTrybe.Infrastructure.Persistence.Repositories
@@ -17,6 +18,11 @@ namespace BlogTrybe.Infrastructure.Persistence.Repositories
         {
             await _dbContext.Users.AddAsync(user);
             await SaveChangesAsync();
+        }
+
+        public async Task<List<User>> GetAllAsync()
+        {
+            return await _dbContext.Users.ToListAsync();
         }
 
         public async Task<User> GetByIdAsync(int id)
