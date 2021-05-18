@@ -2,7 +2,7 @@
 using MediatR;
 using System.Collections.Generic;
 
-namespace BlogTrybe.Application.Queries.GetAllPost
+namespace BlogTrybe.Application.Queries.GetAllPosts
 {
     public class GetAllPostsQuery : IRequest<List<PostViewModel>>
     {

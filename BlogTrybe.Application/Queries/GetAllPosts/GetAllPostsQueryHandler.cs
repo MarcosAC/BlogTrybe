@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace BlogTrybe.Application.Queries.GetAllPost
+namespace BlogTrybe.Application.Queries.GetAllPosts
 {
     public class GetAllPostsQueryHandler : IRequestHandler<GetAllPostsQuery, List<PostViewModel>>
     {

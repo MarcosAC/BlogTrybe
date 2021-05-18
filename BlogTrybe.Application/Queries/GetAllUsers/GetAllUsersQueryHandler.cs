@@ -6,18 +6,18 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace BlogTrybe.Application.Queries.GetAllUser
+namespace BlogTrybe.Application.Queries.GetAllUsers
 {
-    public class GetAllUserQueryHandler : IRequestHandler<GetAllUserQuery, List<UserViewModel>>
+    public class GetAllUsersQueryHandler : IRequestHandler<GetAllUsersQuery, List<UserViewModel>>
     {
         private readonly IUserRepository _userRepository;
 
-        public GetAllUserQueryHandler(IUserRepository userRepository)
+        public GetAllUsersQueryHandler(IUserRepository userRepository)
         {
             _userRepository = userRepository;
         }
 
-        public async Task<List<UserViewModel>> Handle(GetAllUserQuery request, CancellationToken cancellationToken)
+        public async Task<List<UserViewModel>> Handle(GetAllUsersQuery request, CancellationToken cancellationToken)
         {
             var users = await _userRepository.GetAllAsync();
 

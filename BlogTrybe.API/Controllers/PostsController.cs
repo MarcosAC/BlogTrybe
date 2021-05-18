@@ -1,7 +1,7 @@
 ﻿using BlogTrybe.Application.Commands.CreatePost;
 using BlogTrybe.Application.Commands.DeletePost;
 using BlogTrybe.Application.Commands.UpDatePost;
-using BlogTrybe.Application.Queries.GetAllPost;
+using BlogTrybe.Application.Queries.GetAllPosts;
 using BlogTrybe.Application.Queries.GetPostById;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;

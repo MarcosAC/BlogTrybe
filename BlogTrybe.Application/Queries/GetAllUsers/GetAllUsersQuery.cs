@@ -2,11 +2,11 @@
 using MediatR;
 using System.Collections.Generic;
 
-namespace BlogTrybe.Application.Queries.GetAllUser
+namespace BlogTrybe.Application.Queries.GetAllUsers
 {
-    public class GetAllUserQuery : IRequest<List<UserViewModel>>
+    public class GetAllUsersQuery : IRequest<List<UserViewModel>>
     {
-        public GetAllUserQuery(string query)
+        public GetAllUsersQuery(string query)
         {
             Query = query;
         }
