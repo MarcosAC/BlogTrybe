@@ -1,6 +1,8 @@
 ﻿using BlogTrybe.Core.Entities;
 using BlogTrybe.Core.Repositories;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -9,10 +11,12 @@ namespace BlogTrybe.Infrastructure.Persistence.Repositories
     public class PostRepository : IPostRepository
     {
         private readonly BlogTrybeDbContext _dbContext;
+        private readonly string _connectionString;
 
-        public PostRepository(BlogTrybeDbContext dbContext)
+        public PostRepository(BlogTrybeDbContext dbContext, IConfiguration configuration)
         {
             _dbContext = dbContext;
+            _connectionString = configuration.GetConnectionString("DevFreelaCs");
         }
 
         public async Task AddAsync(Post post)
@@ -30,6 +34,15 @@ namespace BlogTrybe.Infrastructure.Persistence.Repositories
         {
             return await _dbContext.Posts
                 .SingleOrDefaultAsync(post => post.Id == id);
+        }
+
+        public async Task<List<Post>> GetBySearchAsync(string searchTerm)
+        {
+            var posts = await _dbContext.Posts
+                .Include(post => post.User)
+                .ToListAsync();
+
+            return posts.FindAll(post => post.Title == searchTerm || post.Content == searchTerm);   
         }
 
         public Task Update(Post post)
