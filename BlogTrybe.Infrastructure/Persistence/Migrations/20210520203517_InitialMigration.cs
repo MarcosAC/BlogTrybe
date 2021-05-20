@@ -34,7 +34,7 @@ namespace BlogTrybe.Infrastructure.Persistence.Migrations
                     Published = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     IdUser = table.Column<int>(type: "int", nullable: false),
-                    UserId = table.Column<int>(type: "int", nullable: true)
+                    UserId1 = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -46,8 +46,8 @@ namespace BlogTrybe.Infrastructure.Persistence.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Posts_Users_UserId",
-                        column: x => x.UserId,
+                        name: "FK_Posts_Users_UserId1",
+                        column: x => x.UserId1,
                         principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -59,9 +59,9 @@ namespace BlogTrybe.Infrastructure.Persistence.Migrations
                 column: "IdUser");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Posts_UserId",
+                name: "IX_Posts_UserId1",
                 table: "Posts",
-                column: "UserId");
+                column: "UserId1");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

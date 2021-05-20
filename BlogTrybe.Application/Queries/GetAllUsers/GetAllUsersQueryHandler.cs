@@ -22,7 +22,7 @@ namespace BlogTrybe.Application.Queries.GetAllUsers
             var users = await _userRepository.GetAllAsync();
 
             var usersViewModel = users
-                .Select(user => new UserViewModel(user.DisplayName, user.Email, user.Image))
+                .Select(user => new UserViewModel(/*user.Id,*/ user.DisplayName, user.Email, user.Image))
                 .ToList();
 
             return usersViewModel;

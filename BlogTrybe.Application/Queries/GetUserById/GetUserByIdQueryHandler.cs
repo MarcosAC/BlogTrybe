@@ -21,7 +21,7 @@ namespace BlogTrybe.Application.Queries.GetUserById
             if (user == null)
                 return null;
 
-            return new UserViewModel(user.DisplayName, user.Email, user.Image);
+            return new UserViewModel(/*user.Id,*/ user.DisplayName, user.Email, user.Image);
         }
     }
 }

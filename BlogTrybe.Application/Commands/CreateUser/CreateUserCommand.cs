@@ -4,9 +4,9 @@ namespace BlogTrybe.Application.Commands.CreatUser
 {
     public class CreateUserCommand : IRequest<int>
     {
-        public string DisplayName { get; private set; }
-        public string Email { get; private set; }
-        public string Password { get; private set; }
-        public string Image { get; private set; }
+        public string DisplayName { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public string Image { get; set; }
     }
 }

@@ -2,6 +2,7 @@
 using BlogTrybe.Application.Commands.DeletePost;
 using BlogTrybe.Application.Commands.UpDatePost;
 using BlogTrybe.Application.Queries.GetAllPosts;
+using BlogTrybe.Application.Queries.GetAllPostsBySearch;
 using BlogTrybe.Application.Queries.GetPostById;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -27,10 +28,14 @@ namespace BlogTrybe.API.Controllers
             return CreatedAtAction(nameof(GetById), new { id = id}, command);
         }
 
-        [HttpGet("{search}")]
-        public async Task<IActionResult> Search(string searchTerm)
-        {            
-            return Ok();
+        [HttpGet("search")]
+        public async Task<IActionResult> Search(string searchTermTitle, string searchTermContent)
+        {
+            var getAllPostBySearchQuery = new GetAllPostsBySearchQuery(searchTermTitle, searchTermContent);
+
+            var posts = await _mediator.Send(getAllPostBySearchQuery);
+
+            return Ok(posts);
         }
 
         [HttpGet("{id}")]

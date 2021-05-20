@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlogTrybe.Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(BlogTrybeDbContext))]
-    [Migration("20210517152629_InitialMigration")]
+    [Migration("20210520203517_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -43,14 +43,14 @@ namespace BlogTrybe.Infrastructure.Persistence.Migrations
                     b.Property<DateTime?>("UpDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("UserId")
+                    b.Property<int?>("UserId1")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("IdUser");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UserId1");
 
                     b.ToTable("Posts");
                 });
@@ -82,21 +82,21 @@ namespace BlogTrybe.Infrastructure.Persistence.Migrations
             modelBuilder.Entity("BlogTrybe.Core.Entities.Post", b =>
                 {
                     b.HasOne("BlogTrybe.Core.Entities.User", null)
-                        .WithMany("UserPosts")
+                        .WithMany("PostsUser")
                         .HasForeignKey("IdUser")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("BlogTrybe.Core.Entities.User", "User")
                         .WithMany()
-                        .HasForeignKey("UserId");
+                        .HasForeignKey("UserId1");
 
                     b.Navigation("User");
                 });
 
             modelBuilder.Entity("BlogTrybe.Core.Entities.User", b =>
                 {
-                    b.Navigation("UserPosts");
+                    b.Navigation("PostsUser");
                 });
 #pragma warning restore 612, 618
         }
