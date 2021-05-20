@@ -8,7 +8,7 @@ namespace BlogTrybe.Core.Repositories
     {
         Task<List<Post>> GetAllAsync();
         Task<Post> GetByIdAsync(int id);
-        Task<List<Post>> GetBySearchAsync(string searchTerm);
+        Task<List<Post>> GetBySearchAsync(string searchTermTitle, string searchTermContent);
         Task AddAsync(Post post);
         Task DeleteAsync(int id);
         Task Update(Post post);

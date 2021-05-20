@@ -1,6 +1,5 @@
 ﻿using BlogTrybe.Core.Entities;
 using BlogTrybe.Core.Repositories;
-using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
@@ -36,13 +35,18 @@ namespace BlogTrybe.Infrastructure.Persistence.Repositories
                 .SingleOrDefaultAsync(post => post.Id == id);
         }
 
-        public async Task<List<Post>> GetBySearchAsync(string searchTerm)
+        public async Task<List<Post>> GetBySearchAsync(string searchTermTitle, string searchTermContent)
         {
             var posts = await _dbContext.Posts
                 .Include(post => post.User)
                 .ToListAsync();
 
-            return posts.FindAll(post => post.Title == searchTerm || post.Content == searchTerm);   
+            if (!string.IsNullOrEmpty(searchTermTitle))
+                return posts.FindAll(post => post.Title == searchTermTitle);
+            else if (!string.IsNullOrEmpty(searchTermContent))
+                return posts.FindAll(post => post.Content == searchTermContent);
+
+            return null;
         }
 
         public Task Update(Post post)
